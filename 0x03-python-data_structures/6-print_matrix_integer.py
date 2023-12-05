@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
-def no_c(my_string):
-    updated_str = ''
-    for i in my_string:
-        if i != 'c' and i != 'C':
-            updated_str += i
-    return (updated_str)
+def print_matrix_integer(matrix=[[]]):
+    for row in matrix:
+        for column in row:
+            if column == row[-1]:
+                print('{:d}'.format(column), end='')
+            else:
+                print('{:d}'.format(column), end=' ')
+        print()
